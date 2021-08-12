@@ -1,0 +1,23 @@
+// Создаём базу данных opt (Отдел оптовых продаж):
+CREATE DATABASE opt;
+
+// Переходим к базе opt:
+USE opt;
+
+// В базе opt создаём таблицу с менеджерами:
+CREATE TABLE tabl_manager (
+man_id INT IDENTITY (1,1) NOT NULL,
+man_surname NVARCHAR (20) NOT NULL,
+man_name NVARCHAR (20) NOT NULL,
+man_age INT NOT NULL
+);
+
+// Добавляем значения в таблицу:
+INSERT table_manager VALUES (
+'Нодко', 'Евлампий, '35'),
+'Огоскин', 'Антуан', '33'),
+'Синченко', 'Аркадий', '27'),
+'Лужко', 'Аркадий, '31');
+
+// Проверяем получившуюся таблицу:
+SELECT * FROM table_manager;
