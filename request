@@ -17,7 +17,16 @@ INSERT table_manager VALUES (
 'Нодко', 'Евлампий, '35'),
 'Огоскин', 'Антуан', '33'),
 'Синченко', 'Аркадий', '27'),
-'Лужко', 'Аркадий, '31');
+'Лужко', 'Аркадий, '31'
+);
 
 // Проверяем получившуюся таблицу:
 SELECT * FROM table_manager;
+
+// В базе opt создаём ещё одну таблицу с экспедиторами:
+CREATE TABLE tabl_exp (
+exp_id INT IDENTITY (1,1) NOT NULL,
+exp_surname NVARCHAR (20) NOT NULL,
+exp_name NVARCHAR (20) NOT NULL,
+exp_age INT NOT NULL
+);
